@@ -1,50 +1,82 @@
-import { View, Text, StyleSheet, TextInput, Button, TouchableOpacity } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 export default function Login() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.imag}>IMAGEM - LOGO</Text>
-
-      <TextInput
-      style={styles.inputs}
-      placeholder='Email'
+    <>
+      <LinearGradient
+        colors={['#ffc1cc', '#ffb6c1', '#ffe4ec']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={StyleSheet.absoluteFill}
       />
 
-      <TextInput
-      style={styles.inputs}
-      placeholder='Senha'
-      secureTextEntry={true}
-      />
+      <View style={styles.container}>
+        <View style={styles.logo}>
+        <FontAwesome6 name="dumbbell" size={60} color="black" /> 
+        </View>
 
-     <TouchableOpacity style={styles.but}>
-        <Text> Entrar </Text>
-     </TouchableOpacity>
-    </View>
+        <TextInput
+          style={styles.input}
+          placeholder="Email"
+          placeholderTextColor="#a84c66"
+        />
 
+        <TextInput
+          style={styles.input}
+          placeholder="Senha"
+          secureTextEntry
+          placeholderTextColor="#a84c66"
+        />
+
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Entrar</Text>
+        </TouchableOpacity>
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-    container:{
-        alignItems: "center",
-        flex: 1 ,
-        marginTop: 290
-    },
-    imag:{
-        marginVertical: 35
-    },
-    inputs:{
-        width: '80%',
-        backgroundColor: '#c1c1c1',
-        marginTop: 15,
-        paddingVertical: 20,
-        paddingHorizontal: 10,
-        fontSize: 20,
-        borderRadius: 8
-    },
-    but:{
-        marginVertical: 35,
-        padding: 5
-         
-    }
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 30,
+  },
+  logo: {
+    fontWeight: 'bold',
+    color: '#a84c66',
+    marginBottom: 40,
+    textAlign: 'center',
+  },
+  input: {
+    width: '100%',
+    backgroundColor: '#fff0f5',
+    marginBottom: 20,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    borderRadius: 12,
+    fontSize: 16,
+    color: '#a84c66',
+    borderWidth: 1,
+    borderColor: '#ffa3b5',
+  },
+  button: {
+    backgroundColor: '#f78fb3',
+    paddingVertical: 14,
+    paddingHorizontal: 50,
+    borderRadius: 12,
+    marginTop: 20,
+    shadowColor: '#ffbad2',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.4,
+    shadowRadius: 6,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
 });
