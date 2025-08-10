@@ -132,7 +132,7 @@ npx expo start --web
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cawzkf/app-suplementos)
 
-**Repositório:** [github.com/cawzkf/Disp.moveis](https://github.com/cawzkf/Disp.moveis)
+**Repositório:** [github.com/cawzkf/app-suplementos](https://github.com/cawzkf/app-suplementos)
 
 ---
 
