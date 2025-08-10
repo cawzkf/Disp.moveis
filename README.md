@@ -1,6 +1,6 @@
 # App de Suplementos
 
-Aplicativo mobile desenvolvido em **React Native** para exibição e navegação de categorias e produtos de suplementos alimentares. Criado como atividade acadêmica com foco em interface responsiva e experiência do usuário.
+Emulação de Aplicativo mobile desenvolvido em **React Native** para exibição e navegação de categorias e produtos de suplementos alimentares. Criado como atividade acadêmica com foco em interface responsiva e experiência do usuário.
 
 ---
 
